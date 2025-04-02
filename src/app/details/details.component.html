@@ -1,0 +1,16 @@
+<div class="motherdiv">
+    <section class="initials-container">
+        <label class="initials-label">{{day}} fra {{time}}</label>
+        <div class="initials-divider"></div>
+        <div class="inputcontainer">
+            <div >ØA:</div>
+            <input
+            type="text"
+            class="initials-input"
+            [ngModel]="initials"
+            (ngModelChange)="initialsChange.emit($event)"
+            aria-label="ØA"
+            />
+        </div>
+      </section>
+      <button class="confirm">Bekræft</button></div>

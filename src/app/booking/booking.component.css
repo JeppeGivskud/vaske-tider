@@ -1,0 +1,130 @@
+.booking-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .day-container {
+    display: flex;
+    width: 100%;
+    max-width: 381px;
+    flex-direction: column;
+    align-items: stretch;
+  
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+  
+  .day-header {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 9px;
+    width: 100%;
+    padding: 9px 16px;
+    overflow: hidden;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-align: center;
+    background-color: #007bff; 
+  }
+  
+  .time-slots-container {
+    align-self: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 365px;
+  }
+  
+  .time-slot {
+    display: flex;
+    min-height: 60px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+  
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+  
+  .time-info {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .time-range {
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .availability-status {
+    text-align: center;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 1;
+  }
+  
+  .availability-indicator {
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    align-self: stretch;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 60px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .availability-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 30px;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  

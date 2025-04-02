@@ -1,0 +1,27 @@
+<div class="booking-container">
+    <div *ngFor="let day of days" class="day-container">
+      <div class="day-header">
+        <span>{{ day.name }}</span>
+      </div>
+      <div class="time-slots-container">
+        <div *ngFor="let slot of day.timeSlots" class="time-slot">
+          <div class="time-info">
+            <div class="time-range">{{ slot.time }}</div>
+            <div class="availability-status">
+              {{ slot.available ? "Fri" : "Optaget" }}
+            </div>
+          </div>
+          <div 
+            class="availability-indicator" 
+            (click)="navigateToDetails(day.name, slot.time)"
+          >
+            <img
+              [src]="getImageUrl()"
+              alt="Availability icon"
+              class="availability-icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
